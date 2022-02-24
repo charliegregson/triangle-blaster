@@ -36,11 +36,11 @@ def draw():
     for i in range(6):
         vertex_list.append(random(-triangle_wave, triangle_wave))
         
-    #A simpler triangle wave to determine stroke weight.
+    # A simpler triangle wave to determine stroke weight.
     sw = abs(10-millis()%20)
     strokeWeight(sw)
     
-    #Draw the **** triangle
+    # Draw the **** triangle
     blendMode(DIFFERENCE)
     fill(random(255),random(255),random(255))
     stroke(255)
@@ -51,7 +51,7 @@ def draw():
              halfwidth + vertex_list[4],
              halfheight + vertex_list[5])
     
-    #A full-window rectangle used as mask to fade out drawn triangles.
+    # A full-window rectangle used as mask to fade out drawn triangles.
     blendMode(ADD)
     noStroke()
     fill(255,7) #2nd number is alpha value
