@@ -21,7 +21,7 @@ def draw():
     # The ultimate range of the triangles (expressed as distance from center)
     j = width/2 
     
-    time_rate = 0.2 
+    time_rate = 0.2
     t = millis() * time_rate
     
     # Math stuff to get a triangle wave which will control
